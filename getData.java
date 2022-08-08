@@ -15,9 +15,9 @@ public class GetData {
 			st.executeUpdate("USE Movies;");
 	
 			
-			ResultSet res = st.executeQuery("SELECT * FROM favorites WHERE main_ = \"Hrithik\" ");
+			ResultSet res = st.executeQuery("SELECT * FROM favorites WHERE director= \"Rajamouli\" ");
 			
-			System.out.println("NAME \t\t MAIN ACTOR \t\t RELEASE YEAR \t\t DIRECTOR\n");
+			System.out.println("NAME \t\t MAIN ACTOR \t\t MAIN ACTRESS \t\t DIRECTOR\n");
 			
 			while(res.next()) {
 				
